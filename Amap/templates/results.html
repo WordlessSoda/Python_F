@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>你输入的下列数据如下:</p>
+<table>
+<tr><td>省市关键词:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>子级行政区:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p> "{{the_phrase }}{{ the_letters }}" 的子级行政区为:</p>
+<h3>{{ the_results }}</h3>
+
+{% endblock %}

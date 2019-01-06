@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/result'>
+<table>
+<p>请在下面输入电影的豆瓣排名:</p>
+<tr><td>排名：</td><td><input name='id' type='TEXT' width='60'></td></tr>
+</table>
+<p>点击提交获得详细电影信息:</p>
+<p><input value='提交!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
