@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div>
+    <div style="text-align:center;color:green;font-size:1.5em">
+        <a >搜索结果</a>
+    </div>
+{% for the_result in the_result %}
+<h3><a href="content?nam={{ the_result.片名 }}">排名：{{ the_result.排名 }}，片名：{{ the_result.片名 }}，导演：{{ the_result.导演 }},国家：{{ the_result.国家 }}</a>
+    <!--<input value="?data={{ the_result.片名 }}" type='hidden'>-->
+</h3>
+
+<!--<h3>导演：{{ the_result.导演 }}</h3>-->
+<!--<h3>主演：{{ the_result.主演 }}</h3>-->
+<!--<h3>类型：{{ the_result.类型 }}</h3>-->
+<!--<h3>国家：{{ the_result.国家 }}</h3>-->
+<!--<h3>语言：{{ the_result.语言 }}</h3>-->
+<!--<h3>上映时间：{{ the_result.上映时间 }}</h3>-->
+<!--<h3>片长：{{ the_result.片长 }}</h3>-->
+{% endfor %}
+
+</div>
+
+{% endblock %}
